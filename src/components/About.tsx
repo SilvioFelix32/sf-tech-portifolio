@@ -10,7 +10,7 @@ const skills = [
   // Back-end
   "Node.js", "Express", "Nest.js", "Fastify",
   // Arquitetura
-  "Microservices", "REST APIs", "Clean Architecture",
+  "Microservices", "REST APIs", "GraphQL", "Clean Architecture", "Clean Code", "SOLID",
   // Mensageria
   "RabbitMQ",
   // Bancos de Dados
@@ -31,6 +31,8 @@ const skills = [
   "Git", "GitHub Actions", "Jenkins", "Bitbucket",
   // Ferramentas de Colaboração
   "Jira", "Confluence",
+  // Metodologias Ágeis
+  "Scrum", "Kanban", "Agile", "Daily",
   // Monitoramento
   "Kibana", "Grafana", "SonarQube"
 ];

@@ -59,8 +59,8 @@ const translations: Record<string, { pt: string; en: string }> = {
     en: "About Me"
   },
   "first_paragraph": {
-    pt: "Olá! Sou Silvio Félix, desenvolvedor Full-Stack com experiência sólida em React, Node.js, TypeScript e Java. Desde 2021, atuo construindo aplicações web escaláveis e de alta performance, com foco em arquitetura limpa, código bem testado e práticas de engenharia de software como SOLID e Clean Code.",
-    en: "Hi! I'm Silvio Félix, a Full-Stack Developer with solid experience in React, Node.js, TypeScript, and Java. Since 2021, I've been building scalable, high-performance web applications, focusing on clean architecture, well-tested code, and software engineering practices like SOLID and Clean Code."
+    pt: "Olá! Sou Silvio Félix, desenvolvedor Full-Stack com experiência sólida em React, Node.js, TypeScript e Java. Desde 2020, atuo construindo aplicações web escaláveis e de alta performance, com foco em arquitetura limpa, código bem testado e práticas de engenharia de software como SOLID e Clean Code.",
+    en: "Hi! I'm Silvio Félix, a Full-Stack Developer with solid experience in React, Node.js, TypeScript, and Java. Since 2020, I've been building scalable, high-performance web applications, focusing on clean architecture, well-tested code, and software engineering practices like SOLID and Clean Code."
   },
   "second_paragraph": {
     pt: "Na SysMap Solutions, atuo em times focados em autenticação e sistemas de alta criticidade, desenvolvendo APIs robustas com Node.js, Express, Fastify, NestJS e Java. No frontend, trabalho com React e Styled Components. Tenho experiência com AWS Lambda, Cognito, API Gateway, S3, Docker e Kubernetes.",

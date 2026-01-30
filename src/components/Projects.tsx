@@ -39,6 +39,14 @@ const Projects: React.FC = () => {
         { label: "Backend Node", url: "https://github.com/SilvioFelix32/sf-tech-back" },
         { label: "Backend Java", url: "https://github.com/SilvioFelix32/sf-tech-sales-api" }
       ]
+    },
+    {
+      titleKey: "EstoqueMax",
+      descriptionKey: "estoquemax_description",
+      image: "/estoqueMax.png",
+      tags: ["Next.js", "React", "TypeScript", "Styled Components", "React Query", "React Hook Form", "Zod", "AWS Cognito", "Axios", "XLSX"],
+      liveUrl: "https://inventory-management-demo-pearl.vercel.app/dashboard/estoque",
+      repos: []
     }
   ];
 

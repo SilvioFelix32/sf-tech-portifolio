@@ -296,6 +296,14 @@ const translations: Record<string, { pt: string; en: string }> = {
     pt: "Projeto de e-commerce com Clean Architecture e Clean Code. Frontend em Next.js/React, Backend Node.js (NestJS + Prisma) para produtos com 100% de cobertura de testes, e Backend Java (Spring Boot) para gestão de vendas.",
     en: "E-commerce project with Clean Architecture and Clean Code. Frontend in Next.js/React, Node.js Backend (NestJS + Prisma) for products with 100% test coverage, and Java Backend (Spring Boot) for sales management."
   },
+  "EstoqueMax": {
+    pt: "EstoqueMax",
+    en: "EstoqueMax"
+  },
+  "estoquemax_description": {
+    pt: "Sistema completo de gerenciamento de estoque com controle de entradas e saídas, gestão de fornecedores, categorias, vendas e relatórios estratégicos. Desenvolvido com Next.js, React Query, Styled Components e seguindo princípios SOLID com arquitetura modular e componentes reutilizáveis.",
+    en: "Complete inventory management system with stock entry and exit control, supplier management, categories, sales, and strategic reports. Developed with Next.js, React Query, Styled Components, and following SOLID principles with modular architecture and reusable components."
+  },
   "Portfolio Website": {
     pt: "Website Portfólio",
     en: "Portfolio Website"

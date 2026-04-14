@@ -358,7 +358,7 @@ export const translations: Record<string, { pt: string; en: string }> = {
     pt: "Next.js | React.js | TypeScript | SASS | NestJS | Node.js",
     en: "Next.js | React.js | TypeScript | SASS | NestJS | Node.js",
   },
-  "exp_4_period": { pt: "Fev 2021 - Nov 2021", en: "Feb 2021 - Nov 2021" },
+  "exp_4_period": { pt: "Fev 2020 - Nov 2021", en: "Feb 2020 - Nov 2021" },
   "exp_4_role": { pt: "Full-Stack Developer", en: "Full-Stack Developer" },
   "exp_4_company": { pt: "SF Tech", en: "SF Tech" },
   "exp_4_context": { pt: "Autonomo", en: "Freelance" },

@@ -4,6 +4,11 @@ import "../index.css";
 export const metadata: Metadata = {
   title: "Silvio Felix | Portfolio",
   description: "Portfolio de desenvolvedor Full-Stack",
+  icons: {
+    icon: "/sf-tech_favicon.jpeg",
+    shortcut: "/sf-tech_favicon.jpeg",
+    apple: "/sf-tech_favicon.jpeg",
+  },
 };
 
 export default function RootLayout({

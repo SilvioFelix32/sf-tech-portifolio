@@ -138,7 +138,7 @@
 
 @layer components {
   .section {
-    @apply py-20 px-6 w-full;
+    @apply py-16 px-6 w-full;
   }
 
   @screen md {

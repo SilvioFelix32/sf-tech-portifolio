@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Github, Globe, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useLanguage } from "@/contexts/LanguageContext";
+import { useLanguage } from "@/context/LanguageContext/LanguageContext";
 
 interface Project {
   titleKey: string;
@@ -117,9 +117,9 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <Button 
-            variant="outline" 
-            size="lg" 
+          <Button
+            variant="outline"
+            size="lg"
             className="group"
             onClick={() => window.open('https://github.com/SilvioFelix32?tab=repositories', '_blank')}
           >

@@ -1,6 +1,6 @@
 
 import React from "react";
-import { useLanguage } from "@/contexts/LanguageContext";
+import { useLanguage } from "@/context/LanguageContext/LanguageContext";
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();

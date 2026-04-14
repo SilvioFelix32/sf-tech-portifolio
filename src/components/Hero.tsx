@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useLanguage } from "@/contexts/LanguageContext";
+import { useLanguage } from "@/context/LanguageContext/LanguageContext";
 import AnimatedBackground from "./AnimatedBackground";
 
 const Hero: React.FC = () => {

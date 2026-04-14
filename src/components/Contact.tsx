@@ -1,6 +1,6 @@
 import React from "react";
 import { Mail, Phone, Linkedin } from "lucide-react";
-import { useLanguage } from "@/contexts/LanguageContext";
+import { useLanguage } from "@/context/LanguageContext/LanguageContext";
 
 const Contact: React.FC = () => {
   const { t } = useLanguage();

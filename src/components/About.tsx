@@ -1,107 +1,87 @@
 import React from "react";
-import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/context/LanguageContext/LanguageContext";
 
-const skills = [
-  // Linguagens
-  "JavaScript", "TypeScript", "Java",
-  // Web
-  "HTML", "CSS", "React.js", "Next.js",
-  // Back-end
-  "Node.js", "Express", "Nest.js", "Fastify",
-  // Arquitetura
-  "Microservices", "REST APIs", "GraphQL", "Clean Architecture", "Clean Code", "SOLID",
-  // Mensageria
-  "RabbitMQ",
-  // Bancos de Dados
-  "PostgreSQL", "MySQL", "MongoDB", "OracleDB", "DynamoDB", "SQL",
-  // Cache
-  "Redis",
-  // Estilização
-  "Styled Components", "Sass", "Tailwind CSS",
-  // Contêineres
-  "Docker", "Kubernetes",
-  // Autenticação
-  "AWS Cognito", "Keycloak", "OAM (OIDC/OAuth2)",
-  // AWS/Cloud
-  "AWS Lambda", "API Gateway", "S3",
-  // Testes
-  "Jest", "JUnit", "Mocha", "Chai", "Mockito",
-  // Versionamento & CI/CD
-  "Git", "GitHub Actions", "Jenkins", "Bitbucket",
-  // Ferramentas de Colaboração
-  "Jira", "Confluence",
-  // Metodologias Ágeis
-  "Scrum", "Kanban", "Agile", "Daily",
-  // Monitoramento
-  "Kibana", "Grafana", "SonarQube"
-];
-
-interface AboutProps {
-  experienceList?: string[];
-}
-
-const About: React.FC<AboutProps> = () => {
+const About: React.FC = () => {
   const { t } = useLanguage();
-
   const educationItems = [
-    { key: "first_education", dateKey: "first_education_date" },
-    { key: "second_education", dateKey: "second_education_date" },
-    { key: "third_education", dateKey: "third_education_date" },
-    { key: "fourth_education", dateKey: "fourth_education_date" },
-    { key: "fifth_education", dateKey: "fifth_education_date" },
-    { key: "sixth_education", dateKey: "sixth_education_date" },
-    { key: "seventh_education", dateKey: "seventh_education_date" },
-    { key: "eighth_education", dateKey: "eighth_education_date" },
-    { key: "ninth_education", dateKey: "ninth_education_date" },
-    { key: "tenth_education", dateKey: "tenth_education_date" },
+    t("about_education_item_1"),
+    t("about_education_item_2"),
+    t("about_education_item_3"),
+    t("about_education_item_4"),
+    t("about_education_item_5"),
+    t("about_education_item_6"),
+    t("about_education_item_7"),
+    t("about_education_item_8"),
+    t("about_education_item_9"),
+    t("about_education_item_10"),
+  ];
+
+  const skillCategories = [
+    { label: "Frontend", skills: ["React", "Next.js", "TypeScript", "JavaScript", "Styled Components", "TailwindCSS"] },
+    { label: "Backend", skills: ["Node.js", "Express", "Fastify", "NestJS", "Java", "Spring Boot"] },
+    { label: t("about_databases"), skills: ["PostgreSQL", "MySQL", "MongoDB", "DynamoDB", "Redis", "ScyllaDB"] },
+    { label: "Cloud & DevOps", skills: ["AWS Lambda", "API Gateway", "AWS Cognito", "S3", "Docker", "Kubernetes"] },
   ];
 
   return (
-    <section id="about" className="section bg-secondary/30">
-      <div className="container mx-auto">
-        <h2 className="section-title">{t("Sobre Mim")}</h2>
+    <section id="about" className="py-20 px-6 lg:px-8 max-w-6xl mx-auto relative">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/2 left-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl -translate-y-1/2" />
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-          <div className="animate-fade-in">
-            <p className="text-lg mb-6">
-              {t("first_paragraph")}
-            </p>
-            <p className="text-lg mb-6">
-              {t("second_paragraph")}
-            </p>
-            <p className="text-lg">
-              {t("third_paragraph")}
-            </p>
+      <div className="relative z-10">
+        <div className="mb-20 text-center">
+          <p className="inline-flex items-center gap-2 text-sm text-primary font-medium mb-4 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
+            {t("about_badge")}
+          </p>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground tracking-tight text-balance">
+            {t("about_title")}
+          </h2>
+        </div>
+
+        <div className="grid lg:grid-cols-5 gap-16 lg:gap-20">
+          <div className="lg:col-span-3 space-y-6">
+            <p className="text-lg text-muted-foreground leading-relaxed">{t("about_p1_senior")}</p>
+            <p className="text-lg text-muted-foreground leading-relaxed">{t("about_p2_senior")}</p>
+            <p className="text-lg text-muted-foreground leading-relaxed">{t("about_p3_senior")}</p>
+
+            <div className="pt-8 border-t border-border/50">
+              <p className="text-xs uppercase tracking-widest text-primary font-semibold mb-4">{t("about_education")}</p>
+              <div className="p-5 rounded-xl bg-card border border-border/50">
+                <ul className="relative space-y-4 before:absolute before:left-2.5 before:top-1 before:h-[calc(100%-0.5rem)] before:w-px before:bg-border/70">
+                  {educationItems.map((item) => (
+                    <li key={item} className="relative pl-8">
+                      <span className="absolute left-0 top-1.5 h-5 w-5 rounded-full border border-primary/40 bg-primary/10 flex items-center justify-center">
+                        <span className="h-2 w-2 rounded-full bg-primary" />
+                      </span>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{item}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <h3 className="text-xl font-semibold mb-6">{t("Minhas Habilidades")}</h3>
-            <div className="flex flex-wrap gap-2">
-              {skills.map((skill, index) => (
-                <Badge
-                  key={index}
-                  className="bg-accent/70 hover:bg-accent/50 text-accent-foreground dark:bg-accent/30 dark:hover:bg-accent/50 px-4 py-2 text-sm animate-fade-in"
-                  style={{ animationDelay: `${index * 0.03}s` }}
-                >
-                  {skill}
-                </Badge>
-              ))}
-            </div>
-
-            <h3 className="text-xl font-semibold mt-10 mb-6">{t("Educação")}</h3>
-            <div className="space-y-4 max-h-[400px] overflow-y-auto pr-2">
-              {educationItems.map((item, index) => (
-                <div 
-                  key={index}
-                  className="border-l-2 border-accent pl-4 animate-fade-in" 
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <h4 className="font-semibold">{t(item.key)}</h4>
-                  <p className="text-muted-foreground text-sm">{t(item.dateKey)}</p>
+          <div className="lg:col-span-2 space-y-6">
+            <p className="text-xs uppercase tracking-widest text-primary font-semibold mb-6">{t("about_stack")}</p>
+            {skillCategories.map((category) => (
+              <div
+                key={category.label}
+                className="p-5 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-300"
+              >
+                <p className="text-sm font-semibold text-foreground mb-4">{category.label}</p>
+                <div className="flex flex-wrap gap-2">
+                  {category.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="inline-block px-3 py-1.5 text-xs font-medium rounded-lg bg-secondary/50 text-secondary-foreground border border-border/50"
+                    >
+                      {skill}
+                    </span>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

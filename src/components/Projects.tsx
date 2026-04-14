@@ -117,9 +117,9 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <Button 
-            variant="outline" 
-            size="lg" 
+          <Button
+            variant="outline"
+            size="lg"
             className="group"
             onClick={() => window.open('https://github.com/SilvioFelix32?tab=repositories', '_blank')}
           >

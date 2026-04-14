@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -8,7 +7,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Experiences from "@/components/Experiences";
 
-const Index: React.FC = () => {
+const HomePage: React.FC = () => {
   return (
     <>
       <Navbar />
@@ -22,4 +21,4 @@ const Index: React.FC = () => {
   );
 };
 
-export default Index;
+export default HomePage;

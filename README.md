@@ -1,5 +1,7 @@
 ## Project info
 
+This project runs with Node.js + Yarn.
+
 Follow these steps:
 
 ```sh
@@ -10,10 +12,10 @@ git clone <YOUR_GIT_URL>
 cd <YOUR_PROJECT_NAME>
 
 # Step 3: Install the necessary dependencies.
-npm i
+yarn install
 
 # Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+yarn dev
 ```
 
 **Edit a file directly in GitHub**
@@ -34,7 +36,7 @@ npm run dev
 
 This project is built with:
 
-- Vite
+- Next.js
 - TypeScript
 - React
 - shadcn-ui

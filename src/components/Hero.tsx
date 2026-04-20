@@ -1,12 +1,19 @@
 import React, { useEffect, useMemo, useState } from "react";
+import { Download } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext/LanguageContext";
 import useScrollToSection from "@/hooks/useScrollToSection";
+
+const CV_FILES: Record<"pt" | "en", string> = {
+  pt: "/Curriculo_Silvio_Felix.pdf",
+  en: "/Silvio_Felix_CV_English.pdf",
+};
 
 const Hero: React.FC = () => {
   const [roleIndex, setRoleIndex] = useState(0);
   const [fade, setFade] = useState(true);
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const scrollToSection = useScrollToSection();
+  const cvHref = CV_FILES[language];
 
   const roles = useMemo(
     () => [
@@ -86,6 +93,15 @@ const Hero: React.FC = () => {
               }}
             >
               {t("hero_about_me")}
+            </a>
+            <a
+              href={cvHref}
+              download
+              aria-label={t("hero_download_cv")}
+              className="inline-flex items-center gap-2 border border-border text-foreground px-8 py-4 text-sm font-semibold rounded-full hover:bg-secondary/50 hover:border-muted-foreground/50 transition-all duration-300 hover:-translate-y-0.5"
+            >
+              <Download className="w-4 h-4" aria-hidden="true" />
+              {t("hero_download_cv")}
             </a>
           </div>
         </div>

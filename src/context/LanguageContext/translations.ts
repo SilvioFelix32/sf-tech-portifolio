@@ -38,6 +38,10 @@ export const translations: Record<string, { pt: string; en: string }> = {
     pt: "Sobre mim",
     en: "About me",
   },
+  "hero_download_cv": {
+    pt: "Baixar CV",
+    en: "Download CV",
+  },
   "hero_role_1": {
     pt: "Senior Full-Stack Engineer",
     en: "Senior Full-Stack Engineer",

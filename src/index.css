@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.ts";
 
 @keyframes pulse-slow {
   0%, 100% {
@@ -141,13 +140,13 @@
     @apply py-16 px-6 w-full;
   }
 
-  @screen md {
+  @media (min-width: 768px) {
     .section {
       @apply px-12;
     }
   }
 
-  @screen lg {
+  @media (min-width: 1024px) {
     .section {
       @apply px-24;
     }
@@ -157,7 +156,7 @@
     @apply text-3xl font-bold mb-10 relative inline-block;
   }
 
-  @screen md {
+  @media (min-width: 768px) {
     .section-title {
       @apply text-4xl;
     }

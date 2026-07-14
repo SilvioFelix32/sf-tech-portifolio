@@ -1,6 +1,5 @@
 import React from "react";
-import { Mail, Phone } from "lucide-react";
-import { LinkedinIcon } from "@/components/icons/BrandIcons";
+import { Linkedin, Mail, Phone } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext/LanguageContext";
 
 const Contact: React.FC = () => {
@@ -28,7 +27,7 @@ const Contact: React.FC = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-3 rounded-lg bg-card border border-border/50 text-sm hover:border-primary/40 transition-colors"
             >
-              <LinkedinIcon size={16} className="text-primary" />
+              <Linkedin size={16} className="text-primary" />
               LinkedIn
             </a>
             <a

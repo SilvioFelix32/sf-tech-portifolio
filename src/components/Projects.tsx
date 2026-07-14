@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Globe, ArrowRight } from "lucide-react";
-import { GithubIcon } from "@/components/icons/BrandIcons";
+import { Github, Globe, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/context/LanguageContext/LanguageContext";
 
@@ -98,7 +97,7 @@ const Projects: React.FC = () => {
                     rel="noopener noreferrer"
                     aria-label={`Ver código ${repo.label} do projeto ${t(project.titleKey)}`}
                   >
-                    <GithubIcon size={16} className="mr-1" /> {repo.label}
+                    <Github size={16} className="mr-1" /> {repo.label}
                   </a>
                 ))}
                 {project.liveUrl && (

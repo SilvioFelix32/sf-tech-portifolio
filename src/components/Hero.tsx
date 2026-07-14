@@ -5,7 +5,7 @@ import useScrollToSection from "@/hooks/useScrollToSection";
 
 const CV_FILES: Record<"pt" | "en", string> = {
   pt: "/Curriculo_Silvio_Felix.pdf",
-  en: "/Silvio_Felix_CV_English.pdf",
+  en: "/Resume_Silvio_Felix_EN.pdf",
 };
 
 const Hero: React.FC = () => {
